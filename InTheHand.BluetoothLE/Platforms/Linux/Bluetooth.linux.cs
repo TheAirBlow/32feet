@@ -105,10 +105,13 @@ namespace InTheHand.Bluetooth
                 {
                     await adapter.StartDiscoveryAsync();
                     await Task.Delay(60000, cancellationToken);
+                }
+                catch (TaskCanceledException) {}
+                finally
+                {
                     await adapter.StopDiscoveryAsync();
                     result.TrySetResult(devices);
                 }
-                catch (TaskCanceledException) {}
             }, CancellationToken.None);
 
             return await result.Task;

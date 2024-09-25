@@ -1,11 +1,12 @@
 ﻿<Project Sdk="MSBuild.Sdk.Extras/3.0.44">
 	<Sdk Name="DotNet.ReproducibleBuilds.Isolated" Version="1.1.1" />
 	<PropertyGroup>
-		<TargetFrameworks>netstandard2.0;monoandroid10.0;xamarinios10;xamarintvos10;xamarin.watchos10;uap10.0;net7.0;net7.0-windows10.0.19041.0;net7.0-android;net7.0-ios;net7.0-maccatalyst;net8.0;net8.0-windows10.0.19041.0;net8.0-android;net8.0-ios;net8.0-maccatalyst;net462</TargetFrameworks>
+		<!--<TargetFrameworks>netstandard2.0;monoandroid10.0;xamarinios10;xamarintvos10;xamarin.watchos10;uap10.0;net7.0;net7.0-windows10.0.19041.0;net7.0-android;net7.0-ios;net7.0-maccatalyst;net8.0;net8.0-windows10.0.19041.0;net8.0-android;net8.0-ios;net8.0-maccatalyst;net462</TargetFrameworks>-->
+		<TargetFrameworks>netstandard2.0;net7.0;net8.0;net462</TargetFrameworks>
 		<Company>In The Hand Ltd</Company>
 		<Authors>Peter Foot</Authors>
 		<Product>32feet.NET</Product>
-		<Version>4.0.37</Version>
+		<Version>4.0.37-suckless</Version>
 		<IncludeSymbols>true</IncludeSymbols>
 		<DebugSymbols>true</DebugSymbols>
 		<DebugType>portable</DebugType>
